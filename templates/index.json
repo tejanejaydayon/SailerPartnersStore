@@ -40,18 +40,76 @@
         "image_height": "large",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
-        "image_behavior": "none",
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-3",
+        "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
     },
+    "steps_section_p6jUxw": {
+      "type": "steps-section",
+      "blocks": {
+        "column_jGJKpi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/9025885_shopping_cart_icon_a0eaf538-6154-475f-b336-ac7343b8b70d.png",
+            "title": "Step 1",
+            "text": "<p>Transform your style effortlessly with our premium sandals, bags, and shampoos. Elevate your everyday look, experience unmatched quality, and embrace a new level of confidence.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_MTiDpa": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/9113497_shipping_fast_solid_icon_13270a87-0739-49d3-bee4-d834d8d31f0a.png",
+            "title": "Step 2",
+            "text": "<p>Unleash your best self with stylish sandals, trendy bags, and nourishing shampoos. Redefine your style and care routine with essentials crafted for transformation.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_6NXW8P": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/5241527_be_embarrassed_embarrassment_emoji_face_icon_359133f0-d452-4c7e-89d5-62e18b45dfe9.png",
+            "title": "Step 3",
+            "text": "<p>Step confidently with our sandals, accessorize with chic bags, and glow with our shampoos. Your journey to effortless style and care begins here.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_jGJKpi",
+        "column_MTiDpa",
+        "column_6NXW8P"
+      ],
+      "settings": {
+        "title": "The Essentials Shift",
+        "column_alignment_title": "center",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "Shop The Favorites",
+        "column_alignment_title": "center",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -59,19 +117,19 @@
         "collection": "all",
         "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
         "quick_add": "none",
         "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 44,
         "padding_bottom": 36
       }
@@ -79,6 +137,7 @@
   },
   "order": [
     "image_banner",
+    "steps_section_p6jUxw",
     "featured_collection"
   ]
 }
