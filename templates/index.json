@@ -19,6 +19,13 @@
             "heading_size": "h0"
           }
         },
+        "text_BjhrxP": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Lorem ipsom dolor amet asit</li><li>Lorem ipsom dolor amet asit</li><li>Lorem ipsom dolor amet asit</li></ul>",
+            "text_style": "body"
+          }
+        },
         "button": {
           "type": "buttons",
           "settings": {
@@ -33,14 +40,15 @@
       },
       "block_order": [
         "heading",
+        "text_BjhrxP",
         "button"
       ],
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-left",
         "show_text_box": false,
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "color_scheme": "scheme-3",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
