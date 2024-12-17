@@ -12,6 +12,13 @@
     "image_banner": {
       "type": "image-banner",
       "blocks": {
+        "star_BmpYJC": {
+          "type": "star",
+          "settings": {
+            "reviews": 2.2,
+            "text_review": "/5 bsaed on 6,347 reviews"
+          }
+        },
         "heading": {
           "type": "heading",
           "settings": {
@@ -39,6 +46,7 @@
         }
       },
       "block_order": [
+        "star_BmpYJC",
         "heading",
         "text_BjhrxP",
         "button"

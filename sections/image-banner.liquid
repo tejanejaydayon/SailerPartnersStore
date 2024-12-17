@@ -126,6 +126,12 @@
             >
               {{ block.settings.heading }}
             </h2>
+          {%- when 'star' -%}
+            <div class="stars-outer">
+              <div class="stars-inner">&nbsp;</div>
+            </div>
+            {{ block.settings.reviews }}
+            {% render 'star-rating', reviewValue: block.settings.reviews %}
           {%- when 'text' -%}
             <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
               <p>{{ block.settings.text }}</p>
@@ -433,6 +439,28 @@
           ],
           "default": "body",
           "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
+        }
+      ]
+    },
+    {
+      "type": "star",
+      "name": "star ratings",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "range",
+          "id": "reviews",
+          "min": 0,
+          "max": 5,
+          "step": 0.1,
+          "label": "Font size",
+          "default": 3
+        },
+        {
+          "type": "text",
+          "id": "text_review",
+          "label": "Give something up",
+          "default": "Give star rating"
         }
       ]
     },
