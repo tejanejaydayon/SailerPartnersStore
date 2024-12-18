@@ -39,15 +39,15 @@
 </style>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const ratings = {{reviewValue}}
-    const starTotal = 5;
+    const ratings{{ id }} = {{reviewValue}}
+    const starTotal{{ id }} = 5;
     // Calculate the percentage of stars to be filled
-    const starPercentage = (ratings / starTotal) * 100;
-    const starPercentageRounded = `${Math.round(starPercentage / 10) * 10}%`;
+    const starPercentage{{ id }} = (ratings{{ id }} / starTotal{{ id }}) * 100;
+    const starPercentageRounded{{ id }} = `${Math.round(starPercentage{{ id }} / 10) * 10}%`;
     // Update the width of the stars-inner element
-    const starsInner = document.querySelector('.stars-inner');
+    const starsInner = document.querySelector(`#reviews-{{ id }} .stars-inner`);
     if (starsInner) {
-      starsInner.style.width = starPercentageRounded;
+      starsInner.style.width = starPercentageRounded{{ id }};
     } else {
       console.error("The element with the class 'stars-inner' was not found.");
     }

@@ -127,11 +127,13 @@
               {{ block.settings.heading }}
             </h2>
           {%- when 'star' -%}
-            <div class="stars-outer">
+            {% assign randomId = section.id | split: '_' | last %}
+            <div class="stars-outer" id="reviews-{{ randomId }}">
               <div class="stars-inner">&nbsp;</div>
             </div>
             {{ block.settings.reviews }}
-            {% render 'star-rating', reviewValue: block.settings.reviews %}
+            {{ block.settings.text_review }}
+            {% render 'star-rating', reviewValue: block.settings.reviews, id: randomId %}
           {%- when 'text' -%}
             <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
               <p>{{ block.settings.text }}</p>
