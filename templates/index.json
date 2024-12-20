@@ -69,7 +69,7 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "",
+        "color_scheme": "scheme-b02c6949-4a7d-40ca-bab9-eb180d894bcf",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 16,
@@ -226,7 +226,7 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-b02c6949-4a7d-40ca-bab9-eb180d894bcf",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
@@ -260,6 +260,112 @@
         "swipe_on_mobile": true,
         "padding_top": 44,
         "padding_bottom": 36
+      }
+    },
+    "image_with_text_reviews_D8Xmjq": {
+      "type": "image-with-text-reviews",
+      "blocks": {
+        "heading_qV6mPD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_tXKPCM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_Wmj8TV": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "reviews": 4.6,
+            "text_review": "/ 5 based on 6,347 reviews"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qV6mPD",
+        "text_tXKPCM",
+        "button_Wmj8TV"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "testimonials_section_BBGxJr": {
+      "type": "testimonials-section",
+      "blocks": {
+        "column_TP3Gwg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Joe-Zhang-Testimonial-Pic.png",
+            "toggle_image": true,
+            "title": "Full Name",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "stars_count": "5",
+            "toggle_review_stars": true
+          }
+        },
+        "column_MXxEmt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Joe-Zhang-Testimonial-Pic.png",
+            "toggle_image": true,
+            "title": "Full Name",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "stars_count": "5",
+            "toggle_review_stars": true
+          }
+        },
+        "column_Ba4npt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Joe-Zhang-Testimonial-Pic.png",
+            "toggle_image": true,
+            "title": "Full Name",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "stars_count": "5",
+            "toggle_review_stars": true
+          }
+        }
+      },
+      "block_order": [
+        "column_TP3Gwg",
+        "column_MXxEmt",
+        "column_Ba4npt"
+      ],
+      "settings": {
+        "title": "Testimonials",
+        "subtitle": "Get inspired by other customers",
+        "heading_alignment": "center",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "swipe_on_mobile": true,
+        "star_color": "#ffcc33",
+        "testimonial_background": "#ffffff",
+        "testimonial_section_background": "#ffffff",
+        "reviews": 4.7,
+        "text_review": "/ 5 based on 6,347 reviews"
       }
     },
     "shipping_bar_dAPkXh": {
@@ -336,6 +442,8 @@
     "logo_y9eQXQ",
     "steps_section_p6jUxw",
     "featured_collection",
+    "image_with_text_reviews_D8Xmjq",
+    "testimonials_section_BBGxJr",
     "shipping_bar_dAPkXh"
   ]
 }
