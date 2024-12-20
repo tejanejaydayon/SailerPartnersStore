@@ -9,7 +9,10 @@
   .reviews {
     color: {{ section.settings.star_color }};
   }
-  .multicolumn-card-testimonial {
+  .reviews-below {
+    padding-top: 2rem;
+  }
+   #shopify-section-{{section.id}} .multicolumn-card {
     background: {{ section.settings.testimonial_background }};
     padding: 20px;
     box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
@@ -52,13 +55,13 @@
             class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}"
             {{ block.shopify_attributes }}
           >
-            <div class="multicolumn-card-testimonial">
+            <div class="multicolumn-card">
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
                 {% endif %}
                 {% if block.settings.toggle_image == true %}
-                  <div class="multicolumn-card-testimonial__image-wrapper multicolumn-card-testimonial__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-testimonial-spacing{% endif %}">
+                  <div class="multicolumn-card__image-wrapper  multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %}  multicolumn-card-spacing{% endif %}">
                     <div
                       class="media media--transparent media--{{ section.settings.image_ratio }}"
                       {% if section.settings.image_ratio == 'adapt' %}
@@ -87,7 +90,7 @@
                   </div>
                 {%- endif -%}
               {%- endif -%}
-              <div class="multicolumn-card-testimonial__info">
+              <div class="multicolumn-card__info">
                 {% if block.settings.toggle_review_stars == true %}
                   <div class="Testimonial__Content">
                     <div class="reviews">

@@ -368,6 +368,46 @@
         "text_review": "/ 5 based on 6,347 reviews"
       }
     },
+    "collection_list_CMJynJ": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_JiFEMi": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_hRDE3L": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_BTmhXM": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_JiFEMi",
+        "featured_collection_hRDE3L",
+        "featured_collection_BTmhXM"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "shipping_bar_dAPkXh": {
       "type": "shipping-bar",
       "blocks": {
@@ -444,6 +484,7 @@
     "featured_collection",
     "image_with_text_reviews_D8Xmjq",
     "testimonials_section_BBGxJr",
+    "collection_list_CMJynJ",
     "shipping_bar_dAPkXh"
   ]
 }
