@@ -2,8 +2,8 @@
   class="logoList--container page-width"
   style="padding-top: {{ section.settings.padding_top | append: "px" }}; padding-bottom: {{ section.settings.padding_bottom | append: "px" }}"
 >
+  <h1 class="titles">{{ section.settings.title | escape }}</h1>
   <ul>
-    <li class="logoList--item titles">{{ section.settings.title | escape }}</li>
     {%- for block in section.blocks -%}
       <li class="logoList--item" {{ block.shopify_attributes }}>
         {%- if block.settings.link != blank -%}
@@ -26,7 +26,7 @@
         max-width: 180px !important;
         font-style: italic;
     }
-    #shopify-section-{{section.id}} .logoList--container {
+  #shopify-section-{{section.id}} .logoList--container {
     padding-top: 20px;
     padding-bottom: 20px;
     margin: auto;
@@ -34,13 +34,13 @@
 
   #shopify-section-{{section.id}} .logoList--container ul {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(8, 1fr);
       gap: 1rem;
       justify-content: center;
       align-items: center;
   }
 
-  #shopify-section-{{section.id}} .logoList--item {
+  #shopify-section-{{section.id}} .logoList--item{
     display: inline-block;
     max-width: {{ section.settings.logo_width }};
   }
@@ -52,18 +52,18 @@
 
 {% schema %}
 {
-  "name": "Logo list",
+  "name": "Instagram Images",
   "settings": [
     {
       "type": "text",
       "id": "title",
       "label": "Heading",
-      "default": "Logo list"
+      "default": "Images list"
     },
     {
       "type": "select",
       "id": "logo_width",
-      "label": "Logo width",
+      "label": "Images width",
       "default": "160px",
       "options": [
         {
@@ -128,7 +128,7 @@
   ],
   "presets": [
     {
-      "name": "Logo list",
+      "name": "Instagram Images",
       "category": "Image",
       "blocks": [
         {

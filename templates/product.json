@@ -9,6 +9,93 @@
  */
 {
   "sections": {
+    "shipping_bar_rDVeNR": {
+      "type": "shipping-bar",
+      "blocks": {
+        "column_WynpLj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/9113497_shipping_fast_solid_icon_13270a87-0739-49d3-bee4-d834d8d31f0a.png",
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_A4KEXY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/9113497_shipping_fast_solid_icon_13270a87-0739-49d3-bee4-d834d8d31f0a.png",
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Xi3ypW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/9113497_shipping_fast_solid_icon_13270a87-0739-49d3-bee4-d834d8d31f0a.png",
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_tbFRwW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/9113497_shipping_fast_solid_icon_13270a87-0739-49d3-bee4-d834d8d31f0a.png",
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9wPLyK": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XUtQae": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_WynpLj",
+        "column_A4KEXY",
+        "column_Xi3ypW",
+        "column_tbFRwW",
+        "column_9wPLyK",
+        "column_XUtQae"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-b02c6949-4a7d-40ca-bab9-eb180d894bcf",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -84,6 +171,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -99,10 +187,546 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "logo_zXCzVg": {
+      "type": "logo",
+      "blocks": {
+        "logo_image_dHEMLG": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-6_1_160x160_2x_e7935a45-6439-4585-b4e5-27c5a809bfca.webp",
+            "link": ""
+          }
+        },
+        "logo_image_GQjqQB": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-4_160x160_2x_968c103f-fa23-4112-b16f-7179b15e78ab.webp",
+            "link": ""
+          }
+        },
+        "logo_image_C4JpwY": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/history-logo-1_160x160_2x_2674a2ef-ba82-49d1-bdf5-3275734f6de7.webp",
+            "link": ""
+          }
+        },
+        "logo_image_rid6gF": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/brand-logo-2_160x160_2x_acfc95c8-b92b-4bfa-b983-2175fa73ea2a.webp",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_dHEMLG",
+        "logo_image_GQjqQB",
+        "logo_image_C4JpwY",
+        "logo_image_rid6gF"
+      ],
+      "settings": {
+        "title": "Recommended by",
+        "logo_width": "100px",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "steps_section_hq6YjY": {
+      "type": "steps-section",
+      "blocks": {
+        "column_T4QHbK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/9025885_shopping_cart_icon_a0eaf538-6154-475f-b336-ac7343b8b70d.png",
+            "title": "Step 1",
+            "text": "<p>Transform your style effortlessly with our premium sandals, bags, and shampoos. Elevate your everyday look, experience unmatched quality, and embrace a new level of confidence.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_JAgJRD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/9113497_shipping_fast_solid_icon_13270a87-0739-49d3-bee4-d834d8d31f0a.png",
+            "title": "Step 2",
+            "text": "<p>Unleash your best self with stylish sandals, trendy bags, and nourishing shampoos. Redefine your style and care routine with essentials crafted for transformation.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_BwAYNQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/5241527_be_embarrassed_embarrassment_emoji_face_icon_359133f0-d452-4c7e-89d5-62e18b45dfe9.png",
+            "title": "Step 3",
+            "text": "<p>Step confidently with our sandals, accessorize with chic bags, and glow with our shampoos. Your journey to effortless style and care begins here.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_T4QHbK",
+        "column_JAgJRD",
+        "column_BwAYNQ"
+      ],
+      "settings": {
+        "title": "The Essentials Shift",
+        "column_alignment_title": "left",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_8pV8yU": {
+      "type": "multirow",
+      "blocks": {
+        "row_c8wR3E": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_zMnDqz": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_aHLBmw": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_c8wR3E",
+        "row_zMnDqz",
+        "row_aHLBmw"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_f7QiYV": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_cir7L4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_4AdrG6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_3Vqnr8": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_cir7L4",
+        "text_4AdrG6",
+        "button_3Vqnr8"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "testimonials_section_X97YEz": {
+      "type": "testimonials-section",
+      "blocks": {
+        "column_zETC6T": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Joe-Zhang-Testimonial-Pic.png",
+            "toggle_image": true,
+            "title": "Full Name",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "stars_count": "5",
+            "toggle_review_stars": true
+          }
+        },
+        "column_AEcRrL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Joe-Zhang-Testimonial-Pic.png",
+            "toggle_image": true,
+            "title": "Full Name",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "stars_count": "5",
+            "toggle_review_stars": true
+          }
+        },
+        "column_PF3eNt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Joe-Zhang-Testimonial-Pic.png",
+            "toggle_image": true,
+            "title": "Full Name",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "stars_count": "5",
+            "toggle_review_stars": true
+          }
+        }
+      },
+      "block_order": [
+        "column_zETC6T",
+        "column_AEcRrL",
+        "column_PF3eNt"
+      ],
+      "settings": {
+        "title": "Social Proof",
+        "subtitle": "",
+        "heading_alignment": "center",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "swipe_on_mobile": true,
+        "star_color": "#ffcc33",
+        "testimonial_background": "#ffffff",
+        "testimonial_section_background": "#ffffff",
+        "reviews": 4.6,
+        "text_review": "/ 5 based on 6,347 reviews"
+      }
+    },
+    "richtext_with_reviews_MftX8k": {
+      "type": "richtext-with-reviews",
+      "blocks": {
+        "star_DjRKLX": {
+          "type": "star",
+          "settings": {
+            "reviews": 4.8,
+            "text_review": "/ 5 based on 6,347 reviews"
+          }
+        },
+        "heading_6WMWYc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_bptcnD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_9Mw9yL": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "star_DjRKLX",
+        "heading_6WMWYc",
+        "text_bptcnD",
+        "button_9Mw9yL"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "faq_YCgiFM": {
+      "type": "faq",
+      "blocks": {
+        "faq_M8hCBz": {
+          "type": "faq",
+          "settings": {
+            "checkbox_expanded": false,
+            "title": "FAQ title",
+            "content": "<p>FAQ content</p>"
+          }
+        },
+        "faq_qpEKwC": {
+          "type": "faq",
+          "settings": {
+            "checkbox_expanded": false,
+            "title": "FAQ title",
+            "content": "<p>FAQ content</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_M8hCBz",
+        "faq_qpEKwC"
+      ],
+      "settings": {
+        "enable_rich_schema": true,
+        "section_heading": "FAQ",
+        "section_subheading": "<p>Section sub heading</p>",
+        "max_width": "64rem",
+        "desk_margin_top": 20,
+        "desk_margin_bottom": 20,
+        "desk_padding_top": 20,
+        "desk_padding_bottom": 20,
+        "mob_margin_top": 20,
+        "mob_margin_bottom": 20,
+        "mob_padding_top": 20,
+        "mob_padding_bottom": 20,
+        "background_color": "#ffffff",
+        "border_color": "#eeeeee",
+        "panel_color": "#fdfdfd",
+        "q_size_small": 1,
+        "q_size_large": 1.4,
+        "q_color": "",
+        "a_color": ""
+      }
+    },
+    "instagram_images_pwwbbc": {
+      "type": "instagram-images",
+      "blocks": {
+        "logo_image_pH4Gic": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/6.png",
+            "link": ""
+          }
+        },
+        "logo_image_AehXUB": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/4.png",
+            "link": ""
+          }
+        },
+        "logo_image_By8AY7": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/8.png",
+            "link": ""
+          }
+        },
+        "logo_image_bWkd96": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/7.png",
+            "link": ""
+          }
+        },
+        "logo_image_9jdQwt": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/3.png",
+            "link": ""
+          }
+        },
+        "logo_image_iMj74b": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/5.png",
+            "link": ""
+          }
+        },
+        "logo_image_bAyWfX": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/2.png",
+            "link": ""
+          }
+        },
+        "logo_image_zKWWg8": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/1.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_pH4Gic",
+        "logo_image_AehXUB",
+        "logo_image_By8AY7",
+        "logo_image_bWkd96",
+        "logo_image_9jdQwt",
+        "logo_image_iMj74b",
+        "logo_image_bAyWfX",
+        "logo_image_zKWWg8"
+      ],
+      "settings": {
+        "title": "Images list",
+        "logo_width": "200px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "shipping_bar_F9dCFn": {
+      "type": "shipping-bar",
+      "blocks": {
+        "column_CLGDnm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/9113497_shipping_fast_solid_icon_13270a87-0739-49d3-bee4-d834d8d31f0a.png",
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_TnChLJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/9113497_shipping_fast_solid_icon_13270a87-0739-49d3-bee4-d834d8d31f0a.png",
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_LRBdan": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/9113497_shipping_fast_solid_icon_13270a87-0739-49d3-bee4-d834d8d31f0a.png",
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_etL9Xd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/9113497_shipping_fast_solid_icon_13270a87-0739-49d3-bee4-d834d8d31f0a.png",
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_6Ca4GX": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_b6Y8EN": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_CLGDnm",
+        "column_TnChLJ",
+        "column_LRBdan",
+        "column_etL9Xd",
+        "column_6Ca4GX",
+        "column_b6Y8EN"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-b02c6949-4a7d-40ca-bab9-eb180d894bcf",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "video_carousel_AKC4QE": {
+      "type": "video-carousel",
+      "settings": {}
     }
   },
   "order": [
+    "shipping_bar_rDVeNR",
     "main",
-    "related-products"
+    "related-products",
+    "logo_zXCzVg",
+    "steps_section_hq6YjY",
+    "multirow_8pV8yU",
+    "image_with_text_f7QiYV",
+    "testimonials_section_X97YEz",
+    "richtext_with_reviews_MftX8k",
+    "faq_YCgiFM",
+    "instagram_images_pwwbbc",
+    "shipping_bar_F9dCFn",
+    "video_carousel_AKC4QE"
   ]
 }
