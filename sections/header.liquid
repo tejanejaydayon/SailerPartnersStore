@@ -94,6 +94,31 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  {% if template == "index" %}
+  .header-wrapper {
+    display: block;
+    position: absolute;
+    background-color: rgb(var(--color-background));
+    width: 100%;
+    background: transparent !important;
+  }
+  {% else %}
+
+   .header-wrapper {
+    background: #fff !important;
+  }
+   .header__menu-item, .header__active-menu-item, .header__icon, .header__heading-link .h2 {
+    color: #000 !important;
+  }
+
+  {% endif %}
+
+  .scrolled-past-header .header-wrapper {
+    background: #fff !important;
+  }
+  .scrolled-past-header .header__menu-item, .scrolled-past-header .header__active-menu-item, .scrolled-past-header .header__icon, .scrolled-past-header .header__heading-link .h2 {
+    color: #000 !important;
+  }
 {%- endstyle -%}
 
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
