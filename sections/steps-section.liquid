@@ -2,17 +2,19 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
     }
+  .title-wrapper-with-link.center {
+      justify-content: center;
   }
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
 {%- endstyle -%}
 
 {%- liquid
@@ -31,17 +33,21 @@
     {% endif %}
   >
     {%- unless section.settings.title == blank -%}
-      <div
-        class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title {% if section.settings.column_alignment_title == 'center' %} center {% endif %}"
-      >
-        <h2 class="title inline-richtext {{ section.settings.heading_size }}">
+      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin {% if section.settings.column_alignment_title == 'center' %} center{% endif %}">
+        <h2 class="title inline-richtext {{ section.settings.heading_size }} ">
           {{ section.settings.title }}
         </h2>
+
         {%- if section.settings.button_label != blank and show_mobile_slider -%}
           <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">
             {{- section.settings.button_label | escape -}}
           </a>
         {%- endif -%}
+      </div>
+    {%- endunless -%}
+    {% unless section.settings.subtitle == blank %}
+      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin {% if section.settings.column_alignment_title == 'center' %} center{% endif %}">
+        <p>{{ section.settings.subtitle }}</p>
       </div>
     {%- endunless -%}
     <slider-component class="slider-mobile-gutter">
@@ -137,10 +143,8 @@
                     {% endif %}
                   >
                     {{- block.settings.link_label | escape -}}
-                    <span class="svg-wrapper"
-                      ><span class="icon-wrap">&nbsp;{{ 'icon-arrow.svg' | inline_asset_content }}</span></span
-                    >
-                  </a>
+                    <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a
+                  >
                 {%- endif -%}
               </div>
             </div>
@@ -149,14 +153,14 @@
       </ul>
 
       {%- if show_mobile_slider -%}
-        <div class="slider-buttons large-up-hide">
+        <div class="slider-buttons no-js-hidden large-up-hide">
           <button
             type="button"
             class="slider-button slider-button--prev"
             name="previous"
             aria-label="{{ 'general.slider.previous_slide' | t }}"
           >
-            <span class="svg-wrapper">{{ 'icon-caret.svg' | inline_asset_content }}</span>
+            {% render 'icon-caret' %}
           </button>
           <div class="slider-counter caption">
             <span class="slider-counter--current">1</span>
@@ -170,7 +174,7 @@
             name="next"
             aria-label="{{ 'general.slider.next_slide' | t }}"
           >
-            <span class="svg-wrapper">{{ 'icon-caret.svg' | inline_asset_content }}</span>
+            {% render 'icon-caret' %}
           </button>
         </div>
       {%- endif -%}
@@ -204,8 +208,14 @@
     {
       "type": "inline_richtext",
       "id": "title",
-      "default": "t:sections.multicolumn.settings.title.default",
+      "default": "Multicolumn",
       "label": "t:sections.multicolumn.settings.title.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "default": "Subtitle",
+      "label": "Subtitle"
     },
     {
       "type": "select",
@@ -238,14 +248,6 @@
         {
           "value": "h0",
           "label": "t:sections.all.heading_size.options__3.label"
-        },
-        {
-          "value": "hxl",
-          "label": "t:sections.all.heading_size.options__4.label"
-        },
-        {
-          "value": "hxxl",
-          "label": "t:sections.all.heading_size.options__5.label"
         }
       ],
       "default": "h1",
@@ -339,7 +341,7 @@
     {
       "type": "text",
       "id": "button_label",
-      "default": "t:sections.multicolumn.settings.button_label.default",
+      "default": "Button label",
       "label": "t:sections.multicolumn.settings.button_label.label"
     },
     {
@@ -417,13 +419,13 @@
         {
           "type": "inline_richtext",
           "id": "title",
-          "default": "t:sections.multicolumn.blocks.column.settings.title.default",
+          "default": "Column",
           "label": "t:sections.multicolumn.blocks.column.settings.title.label"
         },
         {
           "type": "richtext",
           "id": "text",
-          "default": "t:sections.multicolumn.blocks.column.settings.text.default",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
           "label": "t:sections.multicolumn.blocks.column.settings.text.label"
         },
         {

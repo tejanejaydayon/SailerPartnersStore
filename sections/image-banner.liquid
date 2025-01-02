@@ -24,8 +24,23 @@
 {%- endif -%}
 
 {%- style -%}
-  #Banner-{{ section.id }}::after {
-    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+    #Banner-{{ section.id }}::after {
+      opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+    }
+    .banner__text.rte.body li {
+      list-style: none !important;
+      padding: 5px 0 !important;
+      margin-left: 3.6rem !important;
+  }
+  .banner__text.rte.body li:before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-image: url(https://cdn.shopify.com/s/files/1/0916/1447/8643/files/check-mark.svg?v=1735786692);
+    left: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 {%- endstyle -%}
 

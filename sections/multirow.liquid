@@ -41,7 +41,24 @@
     assign corners_class = ' collapse-corners'
   endunless
 -%}
+{%- unless section.settings.title == blank -%}
+  <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin {% if section.settings.column_alignment_title == 'center' %} center{% endif %}">
+    <h2 class="title inline-richtext {{ section.settings.heading_size }} ">
+      {{ section.settings.title }}
+    </h2>
 
+    {%- if section.settings.button_label != blank and show_mobile_slider -%}
+      <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">
+        {{- section.settings.button_label | escape -}}
+      </a>
+    {%- endif -%}
+  </div>
+{%- endunless -%}
+{% unless section.settings.subtitle == blank %}
+  <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin {% if section.settings.column_alignment_title == 'center' %} center{% endif %}">
+    <p>{{ section.settings.subtitle }}</p>
+  </div>
+{%- endunless -%}
 <div class="multirow section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
   <div class="multirow__inner page-width">
     {%- for block in section.blocks -%}
@@ -115,6 +132,34 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "t:sections.multicolumn.settings.title.default",
+      "label": "t:sections.multicolumn.settings.title.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "default": "Subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "select",
+      "id": "column_alignment_title",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.multicolumn.settings.column_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.multicolumn.settings.column_alignment.options__2.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.multicolumn.settings.column_alignment.label"
+    },
     {
       "type": "select",
       "id": "image_height",

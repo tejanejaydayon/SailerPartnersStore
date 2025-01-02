@@ -119,6 +119,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify://shop_images/sailer-partners-hero-image.png",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "middle-left",
@@ -217,6 +218,7 @@
       ],
       "settings": {
         "title": "The Essentials Shift",
+        "subtitle": "Subtitle",
         "column_alignment_title": "center",
         "heading_size": "h1",
         "image_width": "full",
@@ -296,6 +298,7 @@
         "button_Wmj8TV"
       ],
       "settings": {
+        "image": "shopify://shop_images/8.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -418,44 +421,49 @@
       ],
       "settings": {}
     },
-    "collection_list_CMJynJ": {
-      "type": "collection-list",
+    "comparison_table_with_image_6mayhL": {
+      "type": "comparison-table-with-image",
       "blocks": {
-        "featured_collection_JiFEMi": {
-          "type": "featured_collection",
+        "table_HzW9d7": {
+          "type": "table",
           "settings": {
-            "collection": ""
+            "title": "24/7 coverage",
+            "headingchecked1": true,
+            "headingchecked2": false,
+            "headingchecked3": false
           }
         },
-        "featured_collection_hRDE3L": {
-          "type": "featured_collection",
+        "table_iRPBcL": {
+          "type": "table",
           "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_BTmhXM": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
+            "title": "Faster Effect",
+            "headingchecked1": true,
+            "headingchecked2": true,
+            "headingchecked3": false
           }
         }
       },
       "block_order": [
-        "featured_collection_JiFEMi",
-        "featured_collection_hRDE3L",
-        "featured_collection_BTmhXM"
+        "table_HzW9d7",
+        "table_iRPBcL"
       ],
       "settings": {
-        "title": "Collections",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 3,
+        "image": "shopify://shop_images/7.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
         "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "heading1": "Brand Logo",
+        "heading2": "C1",
+        "heading3": "C2"
       }
     },
     "faq_XX74Qi": {
@@ -631,6 +639,46 @@
         "padding_bottom": 52
       }
     },
+    "collection_list_CMJynJ": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_JiFEMi": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_hRDE3L": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_BTmhXM": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_JiFEMi",
+        "featured_collection_hRDE3L",
+        "featured_collection_BTmhXM"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "shipping_bar_dAPkXh": {
       "type": "shipping-bar",
       "blocks": {
@@ -697,40 +745,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "comparison_table_with_image_6mayhL": {
-      "type": "comparison-table-with-image",
-      "blocks": {
-        "table_HzW9d7": {
-          "type": "table",
-          "settings": {
-            "title": "title",
-            "headingchecked1": false,
-            "headingchecked2": false,
-            "headingchecked3": false
-          }
-        }
-      },
-      "block_order": [
-        "table_HzW9d7"
-      ],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "heading1": "Heading 1",
-        "heading2": "Heading 2",
-        "heading3": "Heading 3"
-      }
     }
   },
   "order": [
@@ -742,11 +756,11 @@
     "image_with_text_reviews_D8Xmjq",
     "testimonials_section_BBGxJr",
     "video_carousel_3bNLcM",
-    "collection_list_CMJynJ",
+    "comparison_table_with_image_6mayhL",
     "faq_XX74Qi",
     "instagram_images_Q8AhX8",
     "richtext_with_reviews_3YgwDL",
-    "shipping_bar_dAPkXh",
-    "comparison_table_with_image_6mayhL"
+    "collection_list_CMJynJ",
+    "shipping_bar_dAPkXh"
   ]
 }
