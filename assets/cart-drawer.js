@@ -45,7 +45,11 @@ class CartDrawer extends HTMLElement {
       },
       { once: true }
     );
-
+    fetch('/cart.js')
+      .then(response => response.json())
+      .then(data => {
+        calculateProgress(data.total_price);
+      });
     document.body.classList.add('overflow-hidden');
   }
 
@@ -84,6 +88,13 @@ class CartDrawer extends HTMLElement {
     });
 
     setTimeout(() => {
+
+      fetch('/cart.js')
+        .then(response => response.json())
+        .then(data => {
+          calculateProgress(data.total_price);
+        });
+
       this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
       this.open();
     });

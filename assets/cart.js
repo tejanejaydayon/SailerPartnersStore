@@ -4,9 +4,16 @@ class CartRemoveButton extends HTMLElement {
 
     this.addEventListener('click', (event) => {
       event.preventDefault();
+
       const cartItems = this.closest('cart-items') || this.closest('cart-drawer-items');
       cartItems.updateQuantity(this.dataset.index, 0);
     });
+    fetch('/cart.js')
+      .then(response => response.json())
+      .then(data => {
+        calculateProgress(data.total_price);
+      });
+
   }
 }
 
@@ -84,6 +91,11 @@ class CartItems extends HTMLElement {
 
   onChange(event) {
     this.validateQuantity(event);
+    fetch('/cart.js')
+      .then(response => response.json())
+      .then(data => {
+        calculateProgress(data.total_price);
+      });
   }
 
   onCartUpdate() {
@@ -116,6 +128,11 @@ class CartItems extends HTMLElement {
           console.error(e);
         });
     }
+    fetch('/cart.js')
+      .then(response => response.json())
+      .then(data => {
+        calculateProgress(data.total_price);
+      });
   }
 
   getSectionsToRender() {

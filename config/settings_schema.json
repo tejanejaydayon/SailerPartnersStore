@@ -1463,7 +1463,70 @@
         "id": "cart_color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "scheme-1"
-      }
+      },
+      {
+        "type": "checkbox",
+        "id": "show_shipping_bar",
+        "label": "Show Shipping Bar",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_free_shipping_1",
+        "label": "Show Free Shipping 1",
+        "default": false
+      },
+      {
+        "type": "number",
+        "id": "free_shipping_limit",
+        "label": "Free Shipping Limit",
+        "default": 20,
+      },
+      {
+        "type": "text",
+        "id": "free_shipping_text_1",
+        "label": "Free Shipping Text 1",
+        "placeholder": "Enter Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "free_shipping_image_1",
+        "label": "Select Icon"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_free_shipping_2",
+        "label": "Show Free Shipping 2",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "free_shipping_text_2",
+        "label": "Free Shipping Text 2",
+        "placeholder": "Enter Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "free_shipping_image_2",
+        "label": "Select Icon"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_free_shipping_3",
+        "label": "Show Free Shipping 3",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "free_shipping_text_3",
+        "label": "Free Shipping Text 3",
+        "placeholder": "Enter Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "free_shipping_image_3",
+        "label": "Select Icon"
+      },
     ]
   }
 ]
